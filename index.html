@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Playground - Bird Eats Bug</title>
+  <meta name="description" content="My Static Description">
+
+  
+  <meta property="og:title" content="My Static Title" />
+  <meta property="og:description" content="My Static Description" />
+
+  <script>
+
+    document.title = "My Dynamic Title";
+
+    var title = document.querySelector("meta[property='og:title']")
+    title.content = "My Dynamic Title";
+
+    var desc = document.querySelector("meta[property='og:description']")
+    desc.content = "My Dynamic Description";
+
+    var descmeta = document.querySelector("meta[name='description']")
+    descmeta.content = "My Dynamic Description";
+
+  </script>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Favicon -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="button-top-right">
+    <a href="contact" class="button-green">Contact us</a>
+  </div>
+
+  <div class="demo">
+    Demo
+  </div>
+
+</body>
+
+</html>
